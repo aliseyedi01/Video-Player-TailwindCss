@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* smooth change play & pause button */
+.play-pause-btn {
+  clip-path: polygon(0 0, 50% 25%, 50% 75%, 50% 75%, 50% 25%, 100% 50%, 100% 50%, 0 100%);
+}
+.play-pause-btn.playing {
+  clip-path: polygon(0 0, 40% 0, 40% 100%, 60% 100%, 60% 0, 100% 0, 100% 100%, 0 100%);
+}
+/* style video in fullscreen mode */
+.fullscreen {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  border-radius: 0px !important;
+}
+/* change icon volume with increase & decrease volume */
+.high-volume,
+.low-volume,
+.mute-volume {
+  display: none;
+}
+.container-video[data-volume-level="high"] .high-volume {
+  display: block;
+}
+.container-video[data-volume-level="low"] .low-volume {
+  display: block;
+}
+.container-video[data-volume-level="muted"] .mute-volume {
+  display: block;
+}
+.speed-rate li.active {
+  background-color: rgb(29, 29, 120);
+  color: rgb(233, 245, 209);
+}
+
+/* cover for button when video is very bright */
+.backBetter::after {
+  content: "";
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  border-radius: 10px;
+  pointer-events: none;
+  background: linear-gradient(to top, rgb(130 16 16 / 50%), #0b49ed00);
+  transform: translateX(-9px);
+}
+
+/* subtitle or caption custom */
+video::cue {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+  text-shadow: #d0ff00 1px 1px 3px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  line-height: 20px;
+  position: absolute;
+  bottom: 20px;
+  transform: translateY(-300px) !important;
+}
+
+video::-moz-media-text-track-display-backdrop {
+  background-color: rgb(243, 247, 0) !important;
+  overflow: visible !important;
+}
+
+/* subtitle for  mozilla browser */
+input[type="range"] {
+  background-color: transparent;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: red;
+  border-radius: 5px;
+  -moz-appearance: none;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 50px;
+  background-color: lime;
+  color: aqua;
+  -moz-appearance: none;
+}

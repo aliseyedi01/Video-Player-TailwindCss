@@ -153,7 +153,7 @@ function getTimeCurrent(e) {
     previewImg.style.setProperty("--upTime", `${leftTime}px`);
   }
   const imgPrev = Math.ceil((percent * video.duration) / 10);
-  const imgPrevSrc = `/src/img/preview/image${imgPrev}.jpg`;
+  const imgPrevSrc = `./src/img/preview/image${imgPrev}.jpg`;
   previewImg.src = imgPrevSrc;
   // preview time
   const nowTime = percent * video.duration;

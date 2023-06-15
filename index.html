@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn-icons-png.flaticon.com/512/2285/2285073.png"
+    />
     <title>Video Player</title>
   </head>
 
@@ -13,12 +19,17 @@
       class="m-0 flex h-screen w-screen items-center justify-center bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-red-900 via-violet-200 to-orange-500 dark:bg-gradient-to-b dark:from-gray-900 dark:via-purple-900 dark:to-violet-600"
     >
       <!-- main -->
-      <div class="container-video relative h-max w-full overflow-hidden rounded-md max-md:mx-2 md:w-4/6 md:rounded-3xl" data-volume-level="high">
+      <div
+        class="container-video relative h-max w-full overflow-hidden rounded-md max-md:mx-2 md:w-4/6 md:rounded-3xl"
+        data-volume-level="high"
+      >
         <!-- title video -->
         <div
           class="video-title absolute left-2 top-2 rounded-sm bg-lime-600 backdrop-blur-3xl transition-opacity duration-300 dark:bg-indigo-900 md:left-6 md:top-5 md:rounded-xl"
         >
-          <p class="video-title-change px-3 py-1 font-serif text-[15px] font-bold text-main-light dark:text-indigo-400 md:px-7 md:py-2 md:text-[30px]"></p>
+          <p
+            class="video-title-change px-3 py-1 font-serif text-[15px] font-bold text-main-light dark:text-indigo-400 md:px-7 md:py-2 md:text-[30px]"
+          ></p>
         </div>
         <!-- info -->
         <div class="absolute right-2 top-2 z-50 md:right-4 md:top-4">
@@ -27,7 +38,11 @@
             <!-- info button -->
             <div class="info-btn text-right">
               <button>
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 cursor-pointer text-lime-500 dark:text-main-dark md:h-10 md:w-10" viewBox="0 0 16 16">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5 cursor-pointer text-lime-500 dark:text-main-dark md:h-10 md:w-10"
+                  viewBox="0 0 16 16"
+                >
                   <path
                     fill="currentColor"
                     d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412l-1 4.705c-.07.34.029.533.304.533c.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598c-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081l.082-.381l2.29-.287zM8 5.5a1 1 0 1 1 0-2a1 1 0 0 1 0 2z"
@@ -38,10 +53,13 @@
             <!-- info list -->
             <div class="w-full">
               <!-- control info list -->
-              <div class="info z-10 hidden w-24 divide-y divide-gray-100 rounded-lg bg-orange-300 shadow dark:divide-indigo-600 dark:bg-indigo-700 md:w-44">
+              <div
+                class="info z-10 hidden w-24 divide-y divide-gray-100 rounded-lg bg-orange-300 shadow dark:divide-indigo-600 dark:bg-indigo-700 md:w-44"
+              >
                 <!-- section top list -->
                 <div class="py-1 md:py-2">
-                  <div class="block px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-sm text-gray-700 dark:text-yellow-400 font-black"">List ShortCut
+                  <div class="block px-2 py-1 md:px-4 md:py-2 text-[8px] md:text-sm text-gray-700
+                  dark:text-yellow-400 font-black"">List ShortCut
                 </div>
               </div>
               <!-- section down list -->
@@ -52,7 +70,9 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Play & Pause</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
@@ -65,7 +85,9 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Full Screen</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
@@ -78,7 +100,9 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Mini Player</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
@@ -91,7 +115,9 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Subtitle</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
@@ -104,7 +130,9 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Mute Volume</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
@@ -117,13 +145,22 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Increase volume</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 font-bold text-white" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M11 20V7.825l-5.6 5.6L4 12l8-8l8 8l-1.4 1.425l-5.6-5.6V20Z" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 font-bold text-white"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 20V7.825l-5.6 5.6L4 12l8-8l8 8l-1.4 1.425l-5.6-5.6V20Z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -132,13 +169,22 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[6px] md:text-xs">Decrease volume</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 font-bold text-white" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 font-bold text-white"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 20l-8-8l1.4-1.425l5.6 5.6V4h2v12.175l5.6-5.6L20 12Z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -147,13 +193,22 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Preview Time</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 font-bold text-white" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 font-bold text-white"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M20 11H7.83l5.59-5.59L12 4l-8 8l8 8l1.41-1.41L7.83 13H20v-2z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -162,13 +217,22 @@
                 <div
                   class="w-full cursor-pointer py-[2px] pl-2 pr-[10px] text-sm text-indigo-700 hover:bg-red-300 dark:text-gray-200 dark:hover:bg-sky-700 md:py-2 md:px-3"
                 >
-                  <div class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200">
+                  <div
+                    class="flex w-full flex-row items-center justify-between font-bold text-indigo-600 dark:text-yellow-200"
+                  >
                     <div class="text-[8px] md:text-xs">Next Time</div>
                     <div
                       class="h-4 w-4 rounded-sm bg-red-400 text-center text-[8px] font-light text-indigo-900 dark:bg-indigo-400 dark:text-yellow-100 md:h-9 md:w-9 md:rounded-xl md:py-2 md:px-3 md:text-sm md:font-medium"
                     >
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 font-bold text-white" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="m12 20l-1.425-1.4l5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-4 w-4 font-bold text-white"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="m12 20l-1.425-1.4l5.6-5.6H4v-2h12.175l-5.6-5.6L12 4l8 8Z"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -183,16 +247,32 @@
       <div class="absolute inset-0 mx-2 flex items-center justify-between">
         <!-- backward -->
         <div>
-          <div class="backward-btn flex hidden h-8 w-5 items-center justify-center rounded-2xl bg-red-500 backdrop-blur-xl dark:bg-indigo-600 md:h-20 md:w-10">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-4 text-white md:h-12 md:w-9" viewBox="0 0 24 24">
-              <path fill="currentColor" d="m11 18l-6-6l6-6l1.4 1.4L7.825 12l4.575 4.6Zm6.6 0l-6-6l6-6L19 7.4L14.425 12L19 16.6Z" />
+          <div
+            class="backward-btn flex hidden h-8 w-5 items-center justify-center rounded-2xl bg-red-500 backdrop-blur-xl dark:bg-indigo-600 md:h-20 md:w-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-4 text-white md:h-12 md:w-9"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m11 18l-6-6l6-6l1.4 1.4L7.825 12l4.575 4.6Zm6.6 0l-6-6l6-6L19 7.4L14.425 12L19 16.6Z"
+              />
             </svg>
           </div>
         </div>
         <!-- forward -->
         <div>
-          <div class="forward-btn flex hidden h-8 w-5 items-center justify-center rounded-2xl bg-red-500 backdrop-blur-xl dark:bg-indigo-600 md:h-20 md:w-10">
-            <svg xmlns="http://www.w3.org/2000/svg " class="my-3 h-6 w-4 text-white md:h-12 md:w-9" viewBox="0 0 24 24" viewBox="0 0 24 24">
+          <div
+            class="forward-btn flex hidden h-8 w-5 items-center justify-center rounded-2xl bg-red-500 backdrop-blur-xl dark:bg-indigo-600 md:h-20 md:w-10"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg "
+              class="my-3 h-6 w-4 text-white md:h-12 md:w-9"
+              viewBox="0 0 24 24"
+              viewBox="0 0 24 24"
+            >
               <path fill="currentColor" d="M6.41 6L5 7.41L9.58 12L5 16.59L6.41 18l6-6z" />
               <path fill="currentColor" d="m13 6l-1.41 1.41L16.17 12l-4.58 4.59L13 18l6-6z" />
             </svg>
@@ -233,7 +313,9 @@
           src=""
         />
         <!-- progress Bar -->
-        <div class="progressBar-container group z-40 mx-1 flex h-3 cursor-pointer items-center md:h-6">
+        <div
+          class="progressBar-container group z-40 mx-1 flex h-3 cursor-pointer items-center md:h-6"
+        >
           <!-- time now -->
           <div
             class="upTime absolute left-[var(--upTime)] -top-3 hidden w-max -translate-x-1 rounded-[3px] bg-orange-400 bg-opacity-80 text-xs font-bold text-red-800 group-hover:block dark:bg-indigo-400 dark:text-indigo-600 max-md:px-[1px] md:-top-6 md:-translate-x-3 md:text-base"
@@ -253,10 +335,18 @@
         <div class="h-max w-full">
           <div class="duration-container flex justify-between text-white/75">
             <!-- current time -->
-            <div class="current-time cursor-pointer text-[8px] font-medium text-yellow-200 dark:text-indigo-200 md:text-[16px]">00:00</div>
+            <div
+              class="current-time cursor-pointer text-[8px] font-medium text-yellow-200 dark:text-indigo-200 md:text-[16px]"
+            >
+              00:00
+            </div>
 
             <!-- duration time -->
-            <div class="duration-time cursor-pointer text-[8px] font-medium text-yellow-400 dark:text-indigo-400 md:text-[16px]">00:00</div>
+            <div
+              class="duration-time cursor-pointer text-[8px] font-medium text-yellow-400 dark:text-indigo-400 md:text-[16px]"
+            >
+              00:00
+            </div>
           </div>
         </div>
         <!-- buttons -->
@@ -298,7 +388,11 @@
             </button>
             <!-- screen shot -->
             <button class="screen-shot-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M3 3h2v2H3V3zm4 0h2v2H7V3zm4 0h2v2h-2V3zm4 0h2v2h-2V3zm4 0h2v2h-2V3zm0 4h2v2h-2V7zM3 19h2v2H3v-2zm0-4h2v2H3v-2zm0-4h2v2H3v-2zm0-4h2v2H3V7zm7.667 4l1.036-1.555A1 1 0 0 1 12.535 9h2.93a1 1 0 0 1 .832.445L17.333 11H20a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-8a1 1 0 0 1 1-1h2.667zM9 19h10v-6h-2.737l-1.333-2h-1.86l-1.333 2H9v6zm5-1a2 2 0 1 1 0-4a2 2 0 0 1 0 4z"
@@ -310,21 +404,33 @@
               <!-- icon volume -->
               <div class="volume-btn">
                 <!-- hight volume -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="high-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="high-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     fill="currentColor"
                     d="M3 10v4c0 .55.45 1 1 1h3l3.29 3.29c.63.63 1.71.18 1.71-.71V6.41c0-.89-1.08-1.34-1.71-.71L7 9H4c-.55 0-1 .45-1 1zm13.5 2A4.5 4.5 0 0 0 14 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 4.45v.2c0 .38.25.71.6.85C17.18 6.53 19 9.06 19 12s-1.82 5.47-4.4 6.5c-.36.14-.6.47-.6.85v.2c0 .63.63 1.07 1.21.85C18.6 19.11 21 15.84 21 12s-2.4-7.11-5.79-8.4c-.58-.23-1.21.22-1.21.85z"
                   />
                 </svg>
                 <!-- low volume -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="low-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="low-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     fill="currentColor"
                     d="M18.5 12A4.5 4.5 0 0 0 16 7.97v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 10v4c0 .55.45 1 1 1h3l3.29 3.29c.63.63 1.71.18 1.71-.71V6.41c0-.89-1.08-1.34-1.71-.71L9 9H6c-.55 0-1 .45-1 1z"
                   />
                 </svg>
                 <!-- mute volume -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="mute-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="mute-volume h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     fill="currentColor"
                     d="M3.63 3.63a.996.996 0 0 0 0 1.41L7.29 8.7L7 9H4c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1h3l3.29 3.29c.63.63 1.71.18 1.71-.71v-4.17l4.18 4.18c-.49.37-1.02.68-1.6.91c-.36.15-.58.53-.58.92c0 .72.73 1.18 1.39.91c.8-.33 1.55-.77 2.22-1.31l1.34 1.34a.996.996 0 1 0 1.41-1.41L5.05 3.63c-.39-.39-1.02-.39-1.42 0zM19 12c0 .82-.15 1.61-.41 2.34l1.53 1.53c.56-1.17.88-2.48.88-3.87c0-3.83-2.4-7.11-5.78-8.4c-.59-.23-1.22.23-1.22.86v.19c0 .38.25.71.61.85C17.18 6.54 19 9.06 19 12zm-8.71-6.29l-.17.17L12 7.76V6.41c0-.89-1.08-1.33-1.71-.7zM16.5 12A4.5 4.5 0 0 0 14 7.97v1.79l2.48 2.48c.01-.08.02-.16.02-.24z"
@@ -340,7 +446,11 @@
                 step="any"
                 class="volume h-[6px] max-w-[50px] accent-main-light ring-0 dark:accent-main-dark md:h-6 md:max-w-[80px]"
               />
-              <div class="show-percent-value text-[8px] text-main-light dark:text-main-dark md:text-[15px]">25%</div>
+              <div
+                class="show-percent-value text-[8px] text-main-light dark:text-main-dark md:text-[15px]"
+              >
+                25%
+              </div>
             </button>
           </div>
           <!-- center -->
@@ -360,7 +470,11 @@
             </button>
             <!-- previous video -->
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8"
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M3 3.75a.75.75 0 0 1 1.5 0v16.5a.75.75 0 0 1-1.5 0V3.75Zm18 1.003c0-1.408-1.578-2.24-2.74-1.444L7.763 10.503a1.75 1.75 0 0 0-.01 2.88l10.499 7.302c1.16.807 2.749-.024 2.749-1.437V4.753Z"
@@ -369,11 +483,17 @@
             </button>
             <!-- play & pause -->
             <button class="paly-btn dark:text-sky-800">
-              <div class="play-pause-btn clipPath h-3 w-3 bg-main-light transition-all duration-200 dark:bg-main-dark md:h-8 md:w-8"></div>
+              <div
+                class="play-pause-btn clipPath h-3 w-3 bg-main-light transition-all duration-200 dark:bg-main-dark md:h-8 md:w-8"
+              ></div>
             </button>
             <!-- next video -->
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8" viewBox="0 0 48 48">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8"
+                viewBox="0 0 48 48"
+              >
                 <path
                   fill="currentColor"
                   d="M40.75 6c-.69 0-1.25.56-1.25 1.25v33.5a1.25 1.25 0 0 0 2.5 0V7.25C42 6.56 41.44 6 40.75 6ZM6 9.256c0-2.615 2.931-4.16 5.088-2.68l21.504 14.743c1.883 1.29 1.883 4.07 0 5.36L11.088 41.424C8.93 42.9 6 41.357 6 38.743V9.255Z"
@@ -398,7 +518,11 @@
           <div class="flex justify-center gap-[2px] md:gap-2">
             <!-- speed -->
             <button class="speed-btn relative">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8"
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M10.45 15.5q.625.625 1.575.587q.95-.037 1.375-.687L19 7l-8.4 5.6q-.65.45-.712 1.362q-.063.913.562 1.538ZM5.1 20q-.55 0-1.012-.238q-.463-.237-.738-.712q-.65-1.175-1-2.437Q2 15.35 2 14q0-2.075.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 4 12 4q2.05 0 3.85.775q1.8.775 3.15 2.113q1.35 1.337 2.15 3.124q.8 1.788.825 3.838q.025 1.375-.312 2.688q-.338 1.312-1.038 2.512q-.275.475-.737.712q-.463.238-1.013.238Z"
@@ -442,7 +566,11 @@
             </ul>
             <!-- subtitle   -->
             <button class="subtitle-btn border-b-yellow-400 focus:ring-0 active:right-0">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM4 12h4v2H4v-2zm10 6H4v-2h10v2zm6 0h-4v-2h4v2zm0-4H10v-2h10v2z"
@@ -452,7 +580,11 @@
             <!-- fullScreen -->
             <button class="full-screen">
               <!-- not full -->
-              <svg xmlns="http://www.w3.org/2000/svg" class="full-screen-open h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8" viewBox="0 0 24 24">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="full-screen-open h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8"
+                viewBox="0 0 24 24"
+              >
                 <path
                   fill="currentColor"
                   d="M6 19q-.425 0-.713-.288Q5 18.425 5 18v-3q0-.425.287-.713Q5.575 14 6 14t.713.287Q7 14.575 7 15v2h2q.425 0 .713.288q.287.287.287.712t-.287.712Q9.425 19 9 19Zm0-9q-.425 0-.713-.288Q5 9.425 5 9V6q0-.425.287-.713Q5.575 5 6 5h3q.425 0 .713.287Q10 5.575 10 6t-.287.713Q9.425 7 9 7H7v2q0 .425-.287.712Q6.425 10 6 10Zm9 9q-.425 0-.712-.288Q14 18.425 14 18t.288-.712Q14.575 17 15 17h2v-2q0-.425.288-.713Q17.575 14 18 14t.712.287Q19 14.575 19 15v3q0 .425-.288.712Q18.425 19 18 19Zm3-9q-.425 0-.712-.288Q17 9.425 17 9V7h-2q-.425 0-.712-.287Q14 6.425 14 6t.288-.713Q14.575 5 15 5h3q.425 0 .712.287Q19 5.575 19 6v3q0 .425-.288.712Q18.425 10 18 10Z"
@@ -464,13 +596,26 @@
                 class="full-screen-exit hidden h-3 w-3 text-main-light dark:text-main-dark md:h-8 md:w-8"
                 viewBox="0 0 24 24"
               >
-                <path fill="currentColor" d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z" />
+                <path
+                  fill="currentColor"
+                  d="M10 4H8v4H4v2h6zM8 20h2v-6H4v2h4zm12-6h-6v6h2v-4h4zm0-6h-4V4h-2v6h6z"
+                />
               </svg>
             </button>
             <!-- mini screen -->
             <button>
-              <svg xmlns="http://www.w3.org/2000/svg" class="miniScreen h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6" viewBox="0 0 24 24">
-                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="miniScreen h-3 w-3 text-main-light dark:text-main-dark md:h-6 md:w-6"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <rect width="9" height="7" x="13" y="13" rx="2" />
                 </g>
@@ -480,12 +625,18 @@
         </div>
       </div>
       <!-- video main-->
-      <video class="video z-0 h-full w-full" poster="./src/img/poster/poster.jpg" src="./assets/Big-Buck-Bunny.mp4">
+      <video
+        class="video z-0 h-full w-full"
+        poster="./src/img/poster/poster.jpg"
+        src="./assets/Big-Buck-Bunny.mp4"
+      >
         <track class="" kind="captions" srclang="en" src="./assets/subtitles.vtt" label="English" />
       </video>
     </div>
     <!-- screenshot modal -->
-    <div class="modal h-modal fixed top-0 right-0 left-0 z-50 hidden w-full overflow-y-auto bg-[rgb(0,0,0,0.65)] p-4 overflow-x-hidden md:inset-0 md:h-full">
+    <div
+      class="modal h-modal fixed top-0 right-0 left-0 z-50 hidden w-full overflow-y-auto bg-[rgb(0,0,0,0.65)] p-4 overflow-x-hidden md:inset-0 md:h-full"
+    >
       <!-- control modal -->
       <div class="flex h-full w-full items-center justify-center">
         <!-- control content modal -->
@@ -493,15 +644,24 @@
           <!-- Modal content -->
           <div class="relative rounded-lg bg-lime-100 shadow dark:bg-gray-700">
             <!-- close button & title modal -->
-            <div class="mx-1 flex items-center justify-between rounded-t border-b p-1 dark:border-gray-600 md:items-start md:p-4">
+            <div
+              class="mx-1 flex items-center justify-between rounded-t border-b p-1 dark:border-gray-600 md:items-start md:p-4"
+            >
               <!-- title modal -->
-              <h3 class="text-[15px] font-semibold text-gray-900 dark:text-white md:text-xl">ScreenShot Image</h3>
+              <h3 class="text-[15px] font-semibold text-gray-900 dark:text-white md:text-xl">
+                ScreenShot Image
+              </h3>
               <!-- close Button -->
               <button
                 type="button"
                 class="close-btn-modal ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 dark:hover:bg-rose-500 dark:hover:text-white"
               >
-                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  class="h-5 w-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -515,7 +675,9 @@
               <img class="shot-image mx-auto h-5/6 w-5/6 rounded-lg" src="" />
             </div>
             <!-- buttons -->
-            <div class="flex items-center justify-center space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
+            <div
+              class="flex items-center justify-center space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600"
+            >
               <!-- save as  -->
               <a
                 type="button"

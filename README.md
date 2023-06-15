@@ -36,3 +36,5 @@ Video Player for Learning JavaScript , Tailwind
 - CSS3
 - JavaScript
 - TailwindCss
+
+[see online in page github](https://aliseyedi01.github.io/Video-Player-TailwindCss/)
